@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akirafudo0515.github.io/WC/sitemap.xml
