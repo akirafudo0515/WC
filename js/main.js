@@ -15,7 +15,7 @@
     });
   }
 
-  var ids = ["intro", "partnership", "case-plan", "case-example", "contact"];
+  var ids = ["intro", "partnership", "team", "case-plan", "case-example", "contact"];
   var byNav = {};
   var links = document.querySelectorAll(".sidebar-link[data-nav]");
   for (var j = 0; j < links.length; j++) {
