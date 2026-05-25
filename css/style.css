@@ -1002,6 +1002,102 @@ body.lightbox-open {
   font-family: var(--font-hero-zh);
 }
 
+/* 團隊成員（2:3，每排 2 人 × 3 排） */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--strategy-grid-gap);
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  padding: 0 0.35rem;
+}
+
+@media (max-width: 500px) {
+  .team-grid {
+    gap: 1rem;
+    padding: 0 0.15rem;
+  }
+
+  .team-card__role {
+    font-size: 0.78rem;
+  }
+
+  .team-card__name {
+    font-size: 0.95rem;
+  }
+}
+
+.team-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.team-card__frame {
+  width: 100%;
+  border-radius: var(--radius);
+  margin: 0 4px 4px 0;
+  box-shadow:
+    5px 5px 0 0 var(--orange-glow),
+    10px 10px 0 0 var(--purple-mid),
+    12px 14px 32px rgba(0, 0, 0, 0.45);
+}
+
+.team-card__img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-card);
+}
+
+.team-card__img-wrap[role="button"] {
+  cursor: pointer;
+}
+
+.team-card__img-wrap:focus-visible {
+  outline: 2px solid var(--orange-glow);
+  outline-offset: 3px;
+}
+
+.team-card__img-wrap img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.team-card__caption {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.2rem;
+}
+
+.team-card__role {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--orange-glow);
+  letter-spacing: 0.04em;
+  font-family: var(--font-display);
+}
+
+.team-card__name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-hero-zh);
+}
+
 .partner-grid {
   display: grid;
   grid-template-columns: 1fr;
