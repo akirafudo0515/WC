@@ -459,9 +459,23 @@ a.sidebar-brand *:not(.brand-cross):not(.side-cross) {
   color: var(--text-muted);
   font-size: 1.1rem;
   max-width: 32em;
-  margin: 0 0 2rem;
+  margin: 0 0 1.25rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.seo-about {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 36em;
+  margin: 0 auto 2rem;
+  opacity: 0.92;
+}
+
+.seo-about strong {
+  color: var(--text);
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {
@@ -1364,6 +1378,50 @@ body.lightbox-open {
   line-height: 1.65;
 }
 
+/* FAQ / SEO */
+.faq-section {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.25rem 1.1rem 0.9rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.85rem 0 0.5rem;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 0 0 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.faq-item a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* CTA */
 #contact {
   padding-bottom: 5rem;
@@ -1585,7 +1643,8 @@ section {
 #case-plan,
 #case-example,
 #core-value-title,
-#contact-title {
+#contact-title,
+#faq-title {
   scroll-margin-top: calc(var(--header-h) + 0.75rem);
 }
 
