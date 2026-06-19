@@ -1,0 +1,19 @@
+{
+  "name": "威耀新媒體",
+  "short_name": "威耀",
+  "description": "威耀新媒體 - 台灣新媒體行銷與營收操盤團隊",
+  "start_url": "/WC/",
+  "scope": "/WC/",
+  "display": "standalone",
+  "background_color": "#060608",
+  "theme_color": "#060608",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "assets/logo-main.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
